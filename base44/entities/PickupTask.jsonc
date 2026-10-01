@@ -1,0 +1,53 @@
+{
+  "name": "PickupTask",
+  "type": "object",
+  "properties": {
+    "restaurant_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "driver_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_transit",
+        "arrived",
+        "completed"
+      ],
+      "default": "pending"
+    },
+    "box_count": {
+      "type": "number",
+      "default": 0
+    },
+    "eta": {
+      "type": "string"
+    },
+    "pickup_window_start": {
+      "type": "string"
+    },
+    "pickup_window_end": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "route_order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "restaurant_name",
+    "address",
+    "status"
+  ]
+}

@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 24 10% 8%;
+    --foreground: 0 0% 98%;
+    --card: 24 10% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 24 10% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 24 10% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 24 10% 16%;
+    --muted-foreground: 30 8% 65%;
+    --accent: 43 96% 51%;
+    --accent-foreground: 24 10% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 10% 20%;
+    --input: 24 10% 20%;
+    --ring: 25 95% 53%;
+    --chart-1: 25 95% 53%;
+    --chart-2: 43 96% 51%;
+    --chart-3: 197 37% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+    --font-heading: ui-sans-serif, system-ui, sans-serif;
+    --font-body: ui-sans-serif, system-ui, sans-serif;
+    --font-display: ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 24 10% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 10% 16%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 24 10% 20%;
+    --sidebar-ring: 25 95% 53%;
+  }
+
+  .dark {
+    --background: 24 10% 8%;
+    --foreground: 0 0% 98%;
+    --card: 24 10% 11%;
+    --card-foreground: 0 0% 98%;
+    --popover: 24 10% 11%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 24 10% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 24 10% 16%;
+    --muted-foreground: 30 8% 65%;
+    --accent: 43 96% 51%;
+    --accent-foreground: 24 10% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 10% 20%;
+    --input: 24 10% 20%;
+    --ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  .leaflet-container {
+    background: hsl(24 10% 8%);
+  }
+}

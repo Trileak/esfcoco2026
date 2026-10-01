@@ -1,0 +1,30 @@
+{
+  "name": "Driver",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "available",
+        "in_transit",
+        "on_break"
+      ],
+      "default": "available"
+    },
+    "total_pickups": {
+      "type": "number",
+      "default": 0
+    },
+    "completion_rate": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name",
+    "status"
+  ]
+}
