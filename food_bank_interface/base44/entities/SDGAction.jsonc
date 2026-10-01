@@ -1,0 +1,42 @@
+{
+  "name": "SDGAction",
+  "type": "object",
+  "properties": {
+    "business_name": {
+      "type": "string",
+      "title": "Business Name"
+    },
+    "sdg_number": {
+      "type": "number",
+      "title": "SDG Number"
+    },
+    "sdg_title": {
+      "type": "string",
+      "title": "SDG Title"
+    },
+    "action_description": {
+      "type": "string",
+      "title": "Action Description"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "local",
+        "global"
+      ],
+      "default": "local"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    }
+  },
+  "required": [
+    "business_name",
+    "sdg_number",
+    "sdg_title",
+    "action_description",
+    "scope",
+    "location"
+  ]
+}

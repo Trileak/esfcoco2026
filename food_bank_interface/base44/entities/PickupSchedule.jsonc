@@ -1,0 +1,38 @@
+{
+  "name": "PickupSchedule",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Label"
+    },
+    "time_slot": {
+      "type": "string",
+      "title": "Time Slot"
+    },
+    "box_count": {
+      "type": "number",
+      "title": "Box Count",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "dispatched",
+        "completed"
+      ],
+      "default": "scheduled"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "label",
+    "time_slot",
+    "box_count",
+    "status"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "LeaderboardEntry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Business Name"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "tons_saved": {
+      "type": "number",
+      "title": "Tons of Food Saved",
+      "default": 0
+    },
+    "rank": {
+      "type": "number",
+      "title": "Rank"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Platinum"
+      ],
+      "default": "Bronze"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "local",
+        "global"
+      ],
+      "default": "local"
+    },
+    "is_current_user": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "location",
+    "tons_saved",
+    "rank",
+    "tier",
+    "scope"
+  ]
+}
